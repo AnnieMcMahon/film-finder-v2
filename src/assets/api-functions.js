@@ -1,6 +1,5 @@
 const getGenres = async () => {
   const tmdbKey = import.meta.env.VITE_TMDB_KEY;
-  console.log(tmdbKey);
   const tmdbBaseUrl = "https://api.themoviedb.org/3";
   const genreRequestEndpoint = "/genre/movie/list";
   const requestParams = `?api_key=${tmdbKey}`;
